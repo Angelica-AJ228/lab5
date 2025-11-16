@@ -53,3 +53,7 @@ void imprimirArreglo(Arreglo *arr) {
 
 }
 
+void liberarArreglo(Arreglo *arr) {
+	free(arr->info);
+	free(arr);
+}
