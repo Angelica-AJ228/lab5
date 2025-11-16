@@ -14,8 +14,8 @@ int main() {
 	imprimirArreglo(arr);
 
 
-	printf("Buscando elemento en indice 3:\n");
-	int valor = obtenerElemento(arr, 3);
+	printf("Buscando elemento en indice 2:\n");
+	int valor = obtenerElemento(arr, 2);
 	printf("Numero: %d\n", valor);
 	
 
