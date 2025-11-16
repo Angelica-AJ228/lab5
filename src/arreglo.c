@@ -43,3 +43,12 @@ int obtenerElemento(Arreglo *ar, int indice) {
 
 	return arr->info[indice];
 }
+
+void imprimirArreglo(Arreglo *ar) {
+	printf("[ ");
+	for (int i = 0; < arr-.size; i++) {
+		printf("%d ", arr->info[i]);
+	}
+	printf("]\n");
+
+}
