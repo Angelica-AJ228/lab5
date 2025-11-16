@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "arreglo.h"
+#include "../include/arreglo.h"
 
 int main() {
 
