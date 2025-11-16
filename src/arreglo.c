@@ -35,7 +35,7 @@ void eliminarElemento(Arreglo *arr, int indice) {
 	arr->size--;
 }
 
-int obtenerElemento(Arreglo *ar, int indice) {
+int obtenerElemento(Arreglo *arr, int indice) {
 	if (indice < 0 || indice > arr->size) {
 		printf("Indice invalido/n");
 		return -1;
@@ -44,11 +44,12 @@ int obtenerElemento(Arreglo *ar, int indice) {
 	return arr->info[indice];
 }
 
-void imprimirArreglo(Arreglo *ar) {
+void imprimirArreglo(Arreglo *arr) {
 	printf("[ ");
-	for (int i = 0; < arr-.size; i++) {
+	for (int i = 0; i < arr->size; i++) {
 		printf("%d ", arr->info[i]);
 	}
 	printf("]\n");
 
 }
+
