@@ -16,6 +16,7 @@ void agregarElemento(Arreglo *arr, int valor) {
 	if (arr->size == arr->cap) {
 		int nuevaCap = arr->cap * 2;
 		arr->info = (int*)realloc(arr->info, sizeof(int) * nuevaCap);
+		arr->cap = nuevaCap;
 	}
 
 	arr->info[arr->size] = valor;
@@ -23,7 +24,7 @@ void agregarElemento(Arreglo *arr, int valor) {
 }
 
 void eliminarElemento(Arreglo *arr, int indice) {
-	if (indice < 0 || indice > arr-size) {
+	if (indice < 0 || indice >= arr->size) {
 		printf("Indice invalido/n");
 		return;
 	}
@@ -36,7 +37,7 @@ void eliminarElemento(Arreglo *arr, int indice) {
 }
 
 int obtenerElemento(Arreglo *arr, int indice) {
-	if (indice < 0 || indice > arr->size) {
+	if (indice < 0 || indice >= arr->size) {
 		printf("Indice invalido/n");
 		return -1;
 	}
