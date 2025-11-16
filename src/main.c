@@ -17,5 +17,13 @@ int main() {
 	printf("Buscando elemento en indice 3:\n");
 	int valor = obtenerElemenento(arr, 3);
 	printf("Numero: %d\n", valor);
+	
 
+	printf("Eliminando elemento en indice 0...\n");
+	eliminarElemento(arr, 0);
+	imprimirArreglo(arr);
+
+	liberarArreglo(arr);
+
+	return 0;
 }
