@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../include/arreglo.h>"
+#include "../include/arreglo.h"
 
 Arreglo *crearArreglo(int capInicial) {
 	Arreglo *arr = (Arreglo*)malloc(sizeof(Arreglo));

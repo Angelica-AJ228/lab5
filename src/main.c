@@ -15,7 +15,7 @@ int main() {
 
 
 	printf("Buscando elemento en indice 3:\n");
-	int valor = obtenerElemenento(arr, 3);
+	int valor = obtenerElemento(arr, 3);
 	printf("Numero: %d\n", valor);
 	
 
