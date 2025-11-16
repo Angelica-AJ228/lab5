@@ -11,7 +11,7 @@ typedef struct {
 Arreglo *crearArreglo(int capInicial);
 void agregarElemento(Arreglo *arr, int valor);
 void eliminarElemento(Arreglo *arr, int indice);
-int obtnerElemento(Arreglo *arr, int indice);
+int obtenerElemento(Arreglo *arr, int indice);
 void imprimirArreglo(Arreglo *arr);
 void liberarArreglo(Arreglo *arr);
 
