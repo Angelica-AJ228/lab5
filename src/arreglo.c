@@ -21,3 +21,25 @@ void agregarElemento(Arreglo *arr, int valor) {
 	arr->info[arr->size] = valor;
 	arr->size++;
 }
+
+void eliminarElemento(Arreglo *arr, int indice) {
+	if (indice < 0 || indice > arr-size) {
+		printf("Indice invalido/n");
+		return;
+	}
+
+	for (int i = indice; i < arr->size - 1; i++) {
+	       arr->info[i] = arr->info[i + 1];
+	}
+	
+	arr->size--;
+}
+
+int obtenerElemento(Arreglo *ar, int indice) {
+	if (indice < 0 || indice > arr->size) {
+		printf("Indice invalido/n");
+		return -1;
+	}
+
+	return arr->info[indice];
+}
