@@ -9,6 +9,9 @@ all: $(OBJ)
 main: $(SRC)
 	$(CC) $(CFLAGS) -o main $(SRC)
 
+valgrind: main
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./main
+
 clean:
 	rm -f main
 
